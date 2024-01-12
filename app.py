@@ -1,4 +1,5 @@
 import streamlit as st
+from PIL import Image
 
 st.set_page_config(
     page_title="Matilda Huang - UX Designer, Technology Innovator",
@@ -20,7 +21,8 @@ with col1:
     """,
         unsafe_allow_html=True,
     )
-    st.image('/Users/matildahuang/Downloads/memoji.PNG')
+    profile_image = Image.open('/Users/matildahuang/Downloads/memoji.PNG')
+    st.image(profile_image)
 
 with col2:
     st.markdown(
