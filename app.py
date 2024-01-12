@@ -21,7 +21,7 @@ with col1:
     """,
         unsafe_allow_html=True,
     )
-    profile_image = Image.open('/Users/matildahuang/Downloads/memoji.PNG')
+    profile_image = Image.open('memoji.PNG')
     st.image(profile_image)
 
 with col2:
